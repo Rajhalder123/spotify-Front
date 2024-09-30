@@ -1,0 +1,65 @@
+/* Base styles for the login page */
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #000; /* Use shorthand for black */
+  }
+  
+  /* Logo styles */
+  .login > img {
+    width: auto;
+    height: 200px;
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+  }
+  
+  /* Hover effect on logo */
+  .login > img:hover {
+    transform: scale(1.1); /* Scale up logo on hover for subtle effect */
+  }
+  
+  /* Login button styles */
+  .login a {
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(60, 151, 60);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* 3D hover effect */
+  .login a:hover {
+    background-color: rgb(72, 187, 72); /* Slightly brighter green on hover */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+    transform: translateY(-5px); /* Button lifts up on hover */
+  }
+  
+  /* Media query for tablets and smaller devices */
+  @media (max-width: 768px) {
+    .login > img {
+      height: 150px; /* Resize logo for smaller screens */
+    }
+  
+    .login a {
+      padding: 15px 30px;
+      font-size: 14px; /* Slightly smaller text */
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 480px) {
+    .login > img {
+      height: 120px; /* Further reduction of logo size for mobile */
+    }
+  
+    .login a {
+      padding: 12px 25px;
+      font-size: 12px;
+    }
+  }
+  
